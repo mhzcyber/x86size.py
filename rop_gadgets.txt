@@ -1,0 +1,12 @@
+# Classic ROP gadgets
+pop eax ; ret
+pop rdi ; ret
+pop rsp ; ret
+xchg eax, esp ; ret
+add esp, 0x10 ; ret
+mov [eax], ebx ; ret
+
+# 64-bit specific gadgets
+pop rax ; pop rbx ; ret
+xor rax, rax ; ret
+syscall ; ret

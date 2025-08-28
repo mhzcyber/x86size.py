@@ -1,0 +1,9 @@
+# 32-bit instructions
+jmp esp
+mov eax, 1
+add al, 0x5
+lock cmpxchg [edi], ecx
+
+# 64-bit specific
+mov rax, 1
+add rbx, 10000000
